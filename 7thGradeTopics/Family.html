@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Family</title>
+        <link rel="stylesheet" href="Topics.css">
+        <!-- <link rel="shortcut icon" href="logo.jpg" type="image/png"> -->
+
+        <meta charset="UTF-8">
+        <meta name ="keywords" content="beyond language barriers, blb, english learning, english practice, jnana prabodhini foundation, jpf, spoken english, 7th grade resources"/>
+        <meta name="description" content="Beyond Language Barriers 7th grade curriculum"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- Navbar icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <!-- <script defer src="TestingFiles/test_navbar.js"></script>  -->
+
+        <!--navbar stuff-->
+        <!--Font for Nav Bar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo" href="../index.html" style="padding-left: 20px;">BLB</a>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Resources<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="../7thGradeResources.html" class ="dropdown__link">7th Grade</a></li>
+                            <li><a href="../8thGradeResources.html" class ="dropdown__link">8th Grade</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <iframe style="margin-top: 200px;" src="https://docs.google.com/presentation/d/e/2PACX-1vTbJIBUvHg8p9AYBMhaXh1SAJMhxdJbLPxEay7Wepe0A-EavtZn5yhXexjBxEu5xQ/embed" frameborder="0" width="960" height="569" allowfullscreen="true" allow="autoplay" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <iframe style="margin-top: 40px;" src="https://docs.google.com/presentation/d/e/2PACX-1vThNkrhzAN7PEtScF0FHqh5DlzRsmGcDMECuLXJkpiOu9XNOPtTB2MjYjJxkZsGug/embed" frameborder="0" width="960" height="569" allow="autoplay" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            <div class="instructions">
+                <h2>Instructions: Click on the card to reverse it and show the answer. Click on the arrow keys to go to the next card or go back. You can also use the arrow keys on your keyboard to go back and forth, and click the space bar to reverse the card.</h4>
+            </div>
+
+            <div class="slider_container">
+                <img src="../arrowBackward.png" class="arrow_backward" id="arrowBackward">
+                <div class="card_holder" id="ch">
+                    <script>
+                        const numTimes = 14; // Change this to the desired number of repetitions
+                        const container = document.getElementById('ch'); // Replace 'container' with your actual container ID
+                        const questions = ["My sister and I fighting every day.", "I plays with my younger brother after school.", 
+                        "My grandmother 80 years old.", "In my house 7 family members.", "My father go to office everyday.", 
+                        "I helps my mom with chores.", "My cousins goes to badminton.", "My aunt is come to our house.",
+                        "I has a younger sister.", "Father go to work everyday.", "I visiting my grandparents.", 
+                        "Uncle gift my father wristwatch.", "I plays with my niece.", "My nephew call me Uncle."];
+    
+                        const answers = ["My sister and I fight every day.", "I play with my younger brother after school.", 
+                        "My grandmother is 80 years old.", "In my house there are 7 family members.", "My father goes to office everyday.", 
+                        "I help my mom with chores.", "My cousins go to badminton.", "My aunt has come to our house.",
+                        "I have a younger sister.", "Father goes to work everyday.", "I am visiting my grandparents.", 
+                        "Uncle gifted my father a wristwatch.", "I play with my niece.", "My nephew calls me Uncle."];
+    
+                        const repeatedDiv = `
+                            <div class="card">
+                                <div class="card__inner">
+                                    <div class="card__face card__face--front">
+                                        <h2>Developer Card</h2>
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                        <div class="card__content">
+                                            <div class="card__header">
+                                                <img src="family.jpeg" alt="" class="family_pic">
+                                                <h2>Isha Goyalia</h2>
+                                            <!--</div>
+                                            // <div class="card__body">
+                                            //     <p>You could put information here about the grammmatical concepts used to reach the right answer.</p>
+                                            // </div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+    
+                        container.innerHTML += repeatedDiv;
+                    </script>
+                </div> 
+                <img src="../arrowForward.png" class="arrow_forward" id="arrowForward">
+            </div>
+        
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

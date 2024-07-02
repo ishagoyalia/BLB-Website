@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Entertainment</title>
+        <link rel="stylesheet" href="Topics.css">
+        <!-- <link rel="shortcut icon" href="logo.jpg" type="image/png"> -->
+
+        <meta charset="UTF-8">
+        <meta name ="keywords" content="beyond language barriers, blb, english learning, english practice, jnana prabodhini foundation, jpf, spoken english, 7th grade resources"/>
+        <meta name="description" content="Beyond Language Barriers 7th grade curriculum"/>
+
+        <!-- Navbar icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">   
+        <!-- <script defer src="TestingFiles/test_navbar.js"></script>  -->
+
+        <!--navbar stuff-->
+        <!--Font for Nav Bar-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logoSocials">
+                <a class="logo" href="../index.html" style="padding-left: 20px;">BLB</a>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__toggle-menu"></i>
+                <i class="ri-close-line nav__toggle-close"></i>
+            </div>
+            <nav class="nav__menu" id="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown__item"><a class="dropdown__button">Resources<i class="ri-arrow-down-s-line dropdown__arrow"></i></a>
+                        <ul class="dropdown__container">
+                            <li><a href="../7thGradeResources.html" class ="dropdown__link">7th Grade</a></li>
+                            <li><a href="../8thGradeResources.html" class ="dropdown__link">8th Grade</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <iframe style="margin-top: 200px;" src="https://docs.google.com/presentation/d/e/2PACX-1vRrjIUw96b0jRyQT3BekEdkSOGCtl82qDCziV5wvcC2lw5oZ_6xlREgqo5Bz3VRRw/embed" frameborder="0" width="960" height="569" allow="autoplay" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <iframe style="margin-top: 40px;" src="https://docs.google.com/presentation/d/e/2PACX-1vS4-xcQjpKv-EJk5FXWS_f3VJ7CGdjmgorQO1egbv-9-8nVl1DR1c2GY6JK4aT42w/embed" frameborder="0" width="960" height="569" allow="autoplay" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            
+            <div class="instructions">
+                <h2>Instructions: Click on the card to reverse it and show the answer. Click on the arrow keys to go to the next card or go back. You can also use the arrow keys on your keyboard to go back and forth, and click the space bar to reverse the card.</h4>
+            </div>
+
+            <div class="slider_container">
+                <img src="../arrowBackward.png" class="arrow_backward" id="arrowBackward">
+                <div class="card_holder" id="ch">
+                    <script>
+                        const numTimes = 11; // Change this to the desired number of repetitions
+                        const container = document.getElementById('ch'); // Replace 'container' with your actual container ID
+                        const questions = ["Words that have to do with 'Happy'", "Qualities of an athlete", 
+                        "Movie genres (genre has to do with the TYPE of movie; does it make you laugh? cry?)", 
+                        "A fancy word for a movie buff (someone who likes movies)", "A play", 
+                        "A musical", "Audience", "Dubbed", "Genre", "Melody", "Improvise"];
+    
+                        const answers = ["Excited, Fun, Energetic", "Good sportsmanship (taking it well even if you lose), a winning attitude, competitiveness, cheering on team members", 
+                        "Action, Horror, Comedy, Emotional", "Movie aficionado. You can use aficionado with anything you like, eg: board game aficionado",
+                        "'Natak' in Marathi.", "Like a play (naatak), but has a lot of singing and dancing", 
+                        "Those watching the performance", "When a movie or show is dubbed, it is narrated in a different language than it was originally made in. Ex: English shows can be dubbed in Marathi.",
+                        "Genre has to do with the TYPE of movie; does it make you laugh? cry?", "Tune", "To come up with something, like a music piece or a dance choreography, on the spot"];
+    
+                        const repeatedDiv = `
+                            <div class="card">
+                                <div class="card__inner">
+                                    <div class="card__face card__face--front">
+                                        <h2>Developer Card</h2>
+                                    </div>
+                                    <div class="card__face card__face--back">
+                                        <div class="card__content">
+                                            <div class="card__header">
+                                                <h2>Isha Goyalia</h2>
+                                            </div>
+                                            <!--
+                                            <div class="card__body">
+                                                // <p>You could put information here about the grammmatical concepts used to reach the right answer.</p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+    
+                        container.innerHTML += repeatedDiv;
+                    </script>
+                </div> 
+                <img src="../arrowForward.png" class="arrow_forward" id="arrowForward">
+            </div>
+        
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
